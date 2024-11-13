@@ -1,3 +1,8 @@
+-- Disable this
+if true then
+  return {}
+end
+
 return {
   "echasnovski/mini.nvim",
   version = false,

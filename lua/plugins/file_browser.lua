@@ -22,7 +22,6 @@ return {
       {
         "<leader><Space>",
         function()
-          print(require("lazyvim.util").root())
           require("telescope").extensions.frecency.frecency({
             workspace = "CWD",
             cwd = require("lazyvim.util").root(),
