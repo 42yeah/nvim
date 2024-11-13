@@ -11,3 +11,5 @@ require("config.lazy")
 
 -- lazy.nvim sets relative number - must nullify that
 vim.o.relativenumber = false
+vim.keymap.set("i", "<C-BS>", "<C-w>", {silent = true, desc = "Delete from cursor to beginning word"})
+
