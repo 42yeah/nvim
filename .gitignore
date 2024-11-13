@@ -6,3 +6,6 @@ debug
 foo.*
 *.log
 data
+lua/config/user.lua
+.DS_Store
+
