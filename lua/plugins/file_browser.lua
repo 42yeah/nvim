@@ -6,7 +6,7 @@ return {
         layout_strategy = "vertical",
         extensions = {
           file_browser = {
-            theme = "ivy",
+            use_fd = true,
           },
         },
       },
@@ -29,6 +29,13 @@ return {
         end,
         desc = "Frecency (Root Dir)",
       },
+      {
+        "<leader>fr",
+        function()
+          require("telescope").extensions.frecency.frecency()
+        end,
+        desc = "Frecency",
+      },
     },
   },
 
@@ -44,6 +51,7 @@ return {
         function()
           require("telescope").extensions.file_browser.file_browser({
             cwd = require("lazyvim.util").root(),
+            use_fd = true,
           })
         end,
         desc = "File browser (Root Dir)",
