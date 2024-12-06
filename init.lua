@@ -7,6 +7,7 @@ if vim.g.neovide then
   vim.env.HTTP_PROXY = "http://127.0.0.1:20122"
   vim.env.HTTPS_PROXY = "http://127.0.0.1:20122"
   vim.o.linespace = 5
+  vim.o.shell = "powershell.exe"
 end
 
 -- bootstrap lazy.nvim, LazyVim and your plugins
